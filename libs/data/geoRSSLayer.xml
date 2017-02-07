@@ -1,0 +1,381 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:georss="http://www.georss.org/georss">
+  <channel>
+    <item>
+      <title>Feature 1</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>EASTERN</ogr:ADM1>
+      <ogr:ADM2>MARSABIT</ogr:ADM2>
+      <ogr:Perimeter>1283216.405993</ogr:Perimeter>
+      <ogr:Are>74741497069.774780</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 2</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>N. EASTERN</ogr:ADM1>
+      <ogr:ADM2>MANDERA</ogr:ADM2>
+      <ogr:Perimeter>788969.852582</ogr:Perimeter>
+      <ogr:Are>27323422755.227943</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 3</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>N. EASTERN</ogr:ADM1>
+      <ogr:ADM2>WAJIR</ogr:ADM2>
+      <ogr:Perimeter>1098131.703055</ogr:Perimeter>
+      <ogr:Are>56161740960.656967</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 4</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>RIFT VALLEY</ogr:ADM1>
+      <ogr:ADM2>TURKANA</ogr:ADM2>
+      <ogr:Perimeter>1406531.474568</ogr:Perimeter>
+      <ogr:Are>62256185030.465561</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 5</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>RIFT VALLEY</ogr:ADM1>
+      <ogr:ADM2>WEST POKOT</ogr:ADM2>
+      <ogr:Perimeter>517740.817608</ogr:Perimeter>
+      <ogr:Are>9355885305.218769</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 6</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>RIFT VALLEY</ogr:ADM1>
+      <ogr:ADM2>SAMBURU</ogr:ADM2>
+      <ogr:Perimeter>840060.503065</ogr:Perimeter>
+      <ogr:Are>21259322110.019093</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 7</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>EASTERN</ogr:ADM1>
+      <ogr:ADM2>ISIOLO</ogr:ADM2>
+      <ogr:Perimeter>1085003.970776</ogr:Perimeter>
+      <ogr:Are>25819509533.910851</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 8</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>RIFT VALLEY</ogr:ADM1>
+      <ogr:ADM2>BARINGO</ogr:ADM2>
+      <ogr:Perimeter>637798.426883</ogr:Perimeter>
+      <ogr:Are>10709899190.180241</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 9</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>RIFT VALLEY</ogr:ADM1>
+      <ogr:ADM2>E. MARAKWET</ogr:ADM2>
+      <ogr:Perimeter>428111.577689</ogr:Perimeter>
+      <ogr:Are>2969525029.211807</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 10</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>RIFT VALLEY</ogr:ADM1>
+      <ogr:ADM2>TRANS-NZOIA</ogr:ADM2>
+      <ogr:Perimeter>265095.729610</ogr:Perimeter>
+      <ogr:Are>2511912318.599063</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 11</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>WESTERN</ogr:ADM1>
+      <ogr:ADM2>BUNGOMA</ogr:ADM2>
+      <ogr:Perimeter>325243.886631</ogr:Perimeter>
+      <ogr:Are>3215920827.204129</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 12</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>N. EASTERN</ogr:ADM1>
+      <ogr:ADM2>GARISSA</ogr:ADM2>
+      <ogr:Perimeter>1179611.574018</ogr:Perimeter>
+      <ogr:Are>43899148608.337418</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 13</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>RIFT VALLEY</ogr:ADM1>
+      <ogr:ADM2>UASIN GISHU</ogr:ADM2>
+      <ogr:Perimeter>422486.842198</ogr:Perimeter>
+      <ogr:Are>3479751007.298633</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 14</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>WESTERN</ogr:ADM1>
+      <ogr:ADM2>KAKAMEGA</ogr:ADM2>
+      <ogr:Perimeter>416174.461877</ogr:Perimeter>
+      <ogr:Are>3132435045.693378</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 15</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>RIFT VALLEY</ogr:ADM1>
+      <ogr:ADM2>LAIKIPIA</ogr:ADM2>
+      <ogr:Perimeter>577951.359504</ogr:Perimeter>
+      <ogr:Are>9740005835.880175</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 16</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>WESTERN</ogr:ADM1>
+      <ogr:ADM2>BUSIA</ogr:ADM2>
+      <ogr:Perimeter>281700.318179</ogr:Perimeter>
+      <ogr:Are>1749276462.160693</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 17</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>EASTERN</ogr:ADM1>
+      <ogr:ADM2>MERU</ogr:ADM2>
+      <ogr:Perimeter>529116.277274</ogr:Perimeter>
+      <ogr:Are>7413715284.652542</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 18</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>RIFT VALLEY</ogr:ADM1>
+      <ogr:ADM2>NANDI</ogr:ADM2>
+      <ogr:Perimeter>345633.959305</ogr:Perimeter>
+      <ogr:Are>3040001233.154341</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 19</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>NYANZA</ogr:ADM1>
+      <ogr:ADM2>SIAYA</ogr:ADM2>
+      <ogr:Perimeter>359700.909490</ogr:Perimeter>
+      <ogr:Are>2794487197.632024</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 20</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>RIFT VALLEY</ogr:ADM1>
+      <ogr:ADM2>NAKURU</ogr:ADM2>
+      <ogr:Perimeter>691018.529602</ogr:Perimeter>
+      <ogr:Are>7617361646.746250</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 21</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>WESTERN</ogr:ADM1>
+      <ogr:ADM2>VIHIGA</ogr:ADM2>
+      <ogr:Perimeter>158016.883554</ogr:Perimeter>
+      <ogr:Are>609421825.614492</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 22</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>NYANZA</ogr:ADM1>
+      <ogr:ADM2>HOMA_BAY</ogr:ADM2>
+      <ogr:Perimeter>704088.641045</ogr:Perimeter>
+      <ogr:Are>6765541623.589020</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 23</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>CENTRAL</ogr:ADM1>
+      <ogr:ADM2>NYANDARUA</ogr:ADM2>
+      <ogr:Perimeter>385827.156331</ogr:Perimeter>
+      <ogr:Are>3377348966.149093</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 24</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>EASTERN</ogr:ADM1>
+      <ogr:ADM2>NITHI</ogr:ADM2>
+      <ogr:Perimeter>298956.084558</ogr:Perimeter>
+      <ogr:Are>2368515303.156378</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 25</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>NYANZA</ogr:ADM1>
+      <ogr:ADM2>KISUMU</ogr:ADM2>
+      <ogr:Perimeter>381863.966094</ogr:Perimeter>
+      <ogr:Are>2238827064.795956</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 26</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>RIFT VALLEY</ogr:ADM1>
+      <ogr:ADM2>KERICHO</ogr:ADM2>
+      <ogr:Perimeter>373091.650142</ogr:Perimeter>
+      <ogr:Are>2512173885.326136</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 27</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>COAST</ogr:ADM1>
+      <ogr:ADM2>TANA RIVER</ogr:ADM2>
+      <ogr:Perimeter>1144412.597673</ogr:Perimeter>
+      <ogr:Are>39483738131.633324</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 28</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>CENTRAL</ogr:ADM1>
+      <ogr:ADM2>NYERI</ogr:ADM2>
+      <ogr:Perimeter>328712.432550</ogr:Perimeter>
+      <ogr:Are>3236717242.857246</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 29</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>EASTERN</ogr:ADM1>
+      <ogr:ADM2>KITUI</ogr:ADM2>
+      <ogr:Perimeter>947600.399395</ogr:Perimeter>
+      <ogr:Are>30780342049.224758</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 30</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>CENTRAL</ogr:ADM1>
+      <ogr:ADM2>KIRINYAGA</ogr:ADM2>
+      <ogr:Perimeter>213663.139874</ogr:Perimeter>
+      <ogr:Are>1470384400.340179</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 31</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>EASTERN</ogr:ADM1>
+      <ogr:ADM2>EMBU</ogr:ADM2>
+      <ogr:Perimeter>372308.403374</ogr:Perimeter>
+      <ogr:Are>2738105015.607492</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 32</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>RIFT VALLEY</ogr:ADM1>
+      <ogr:ADM2>BOMET</ogr:ADM2>
+      <ogr:Perimeter>283930.072920</ogr:Perimeter>
+      <ogr:Are>2372985936.725547</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 33</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>NYANZA</ogr:ADM1>
+      <ogr:ADM2>NYAMIRA</ogr:ADM2>
+      <ogr:Perimeter>168268.646585</ogr:Perimeter>
+      <ogr:Are>868045533.254366</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 34</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>RIFT VALLEY</ogr:ADM1>
+      <ogr:ADM2>NAROK</ogr:ADM2>
+      <ogr:Perimeter>731098.517396</ogr:Perimeter>
+      <ogr:Are>17843098186.160488</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 35</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>NYANZA</ogr:ADM1>
+      <ogr:ADM2>KISII</ogr:ADM2>
+      <ogr:Perimeter>197672.172802</ogr:Perimeter>
+      <ogr:Are>1360287102.144458</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 36</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>CENTRAL</ogr:ADM1>
+      <ogr:ADM2>MURANGA</ogr:ADM2>
+      <ogr:Perimeter>272939.475904</ogr:Perimeter>
+      <ogr:Are>2597656610.271039</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 37</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>NYANZA</ogr:ADM1>
+      <ogr:ADM2>MIGORI</ogr:ADM2>
+      <ogr:Perimeter>314627.714704</ogr:Perimeter>
+      <ogr:Are>2523833981.406225</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 38</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>CENTRAL</ogr:ADM1>
+      <ogr:ADM2>KIAMBU</ogr:ADM2>
+      <ogr:Perimeter>326280.706161</ogr:Perimeter>
+      <ogr:Are>2471155987.383556</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 39</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>EASTERN</ogr:ADM1>
+      <ogr:ADM2>MACHAKOS</ogr:ADM2>
+      <ogr:Perimeter>582364.226905</ogr:Perimeter>
+      <ogr:Are>5999693959.205770</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 40</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>RIFT VALLEY</ogr:ADM1>
+      <ogr:ADM2>KAJIADO</ogr:ADM2>
+      <ogr:Perimeter>762993.919924</ogr:Perimeter>
+      <ogr:Are>21487437682.638260</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 41</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>NAIROBI</ogr:ADM1>
+      <ogr:ADM2>NAIROBI</ogr:ADM2>
+      <ogr:Perimeter>172935.906458</ogr:Perimeter>
+      <ogr:Are>722279672.563427</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 42</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>EASTERN</ogr:ADM1>
+      <ogr:ADM2>MAKUENI</ogr:ADM2>
+      <ogr:Perimeter>581990.393202</ogr:Perimeter>
+      <ogr:Are>8516565192.100708</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 43</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>COAST</ogr:ADM1>
+      <ogr:ADM2>LAMU</ogr:ADM2>
+      <ogr:Perimeter>847207.345140</ogr:Perimeter>
+      <ogr:Are>6462126658.607882</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 44</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>COAST</ogr:ADM1>
+      <ogr:ADM2>KILIFI</ogr:ADM2>
+      <ogr:Perimeter>605851.924293</ogr:Perimeter>
+      <ogr:Are>12720476908.766249</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 45</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>COAST</ogr:ADM1>
+      <ogr:ADM2>TAITA TAVETA</ogr:ADM2>
+      <ogr:Perimeter>593095.173547</ogr:Perimeter>
+      <ogr:Are>17281757255.640408</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 46</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>COAST</ogr:ADM1>
+      <ogr:ADM2>KWALE</ogr:ADM2>
+      <ogr:Perimeter>533978.837965</ogr:Perimeter>
+      <ogr:Are>8283146572.297608</ogr:Are>
+    </item>
+    <item>
+      <title>Feature 47</title>
+      <ogr:ADM0>Kenya</ogr:ADM0>
+      <ogr:ADM1>COAST</ogr:ADM1>
+      <ogr:ADM2>MOMBASA</ogr:ADM2>
+      <ogr:Perimeter>118858.193694</ogr:Perimeter>
+      <ogr:Are>248513561.264615</ogr:Are>
+    </item>
+  </channel>
+</rss>

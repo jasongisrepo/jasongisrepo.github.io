@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "AREA": 0.0, "PERIMETER": 0.0, "KAJITOWN_": 1, "KAJITOWN_I": 1, "TOWNS": null }, "geometry": { "type": "Point", "coordinates": [ 36.652733270568653, -1.403238495270652 ] } },
+{ "type": "Feature", "properties": { "AREA": 0.0, "PERIMETER": 0.0, "KAJITOWN_": 2, "KAJITOWN_I": 2, "TOWNS": "Kiserian" }, "geometry": { "type": "Point", "coordinates": [ 36.680694609790898, -1.464602783108943 ] } },
+{ "type": "Feature", "properties": { "AREA": 0.0, "PERIMETER": 0.0, "KAJITOWN_": 3, "KAJITOWN_I": 3, "TOWNS": null }, "geometry": { "type": "Point", "coordinates": [ 36.472752609182137, -1.591791769304375 ] } },
+{ "type": "Feature", "properties": { "AREA": 0.0, "PERIMETER": 0.0, "KAJITOWN_": 4, "KAJITOWN_I": 4, "TOWNS": null }, "geometry": { "type": "Point", "coordinates": [ 37.119839185201002, -1.777977135008314 ] } },
+{ "type": "Feature", "properties": { "AREA": 0.0, "PERIMETER": 0.0, "KAJITOWN_": 5, "KAJITOWN_I": 5, "TOWNS": null }, "geometry": { "type": "Point", "coordinates": [ 36.790411142324004, -1.882221219652264 ] } },
+{ "type": "Feature", "properties": { "AREA": 0.0, "PERIMETER": 0.0, "KAJITOWN_": 6, "KAJITOWN_I": 6, "TOWNS": null }, "geometry": { "type": "Point", "coordinates": [ 36.293497546337164, -1.931007032277579 ] } },
+{ "type": "Feature", "properties": { "AREA": 0.0, "PERIMETER": 0.0, "KAJITOWN_": 7, "KAJITOWN_I": 7, "TOWNS": null }, "geometry": { "type": "Point", "coordinates": [ 37.280731227528314, -2.17703721546077 ] } },
+{ "type": "Feature", "properties": { "AREA": 0.0, "PERIMETER": 0.0, "KAJITOWN_": 8, "KAJITOWN_I": 8, "TOWNS": null }, "geometry": { "type": "Point", "coordinates": [ 37.706610094038204, -2.214961545778404 ] } },
+{ "type": "Feature", "properties": { "AREA": 0.0, "PERIMETER": 0.0, "KAJITOWN_": 9, "KAJITOWN_I": 9, "TOWNS": "Namanga" }, "geometry": { "type": "Point", "coordinates": [ 36.789576179267328, -2.573039614923025 ] } },
+{ "type": "Feature", "properties": { "AREA": 0.0, "PERIMETER": 0.0, "KAJITOWN_": 10, "KAJITOWN_I": 10, "TOWNS": null }, "geometry": { "type": "Point", "coordinates": [ 37.535145621162215, -2.574183302420676 ] } },
+{ "type": "Feature", "properties": { "AREA": 0.0, "PERIMETER": 0.0, "KAJITOWN_": 11, "KAJITOWN_I": 11, "TOWNS": null }, "geometry": { "type": "Point", "coordinates": [ 37.518517463188772, -2.958220431806968 ] } }
+]
+}

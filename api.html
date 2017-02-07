@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+	<title>Google map Api</title>
+	<link rel="stylesheet" href="libs/css/api.css" />
+   <head>
+   
+   </head>
+   
+   <body >
+	<h2>Hello Google Map Api!.</h2>
+	<div class="map-control">
+		<form action="" id="eventBtns">
+			<input id="btnZoomToNai" type="button" value="Zoom To Nairobi" />
+			<input id="btnZoomToStr" type="button" value="Zoom Street Level" />
+			<input id="btnDisableDrag" type="button" value="Disable Drag" />
+			<input id="btnMaxZoom" type="button" value="Set Max Zoom - 21" />
+			<input id="btnMinZoom" type="button" value="Set Min Zoom - 8" />
+			<input id="btnChangeUI" type="button" value="Change UI" />
+			<input id="btnDisableScroll" type="button" value="Disable Scroll Zoom" />
+			<input type="button" name="roadmap" value="View Roadmap" />
+		</form>
+	</div>
+	<span id="mapTypes"><img src="libs/img/layers.png" alt="Layers" id="layers" /></span>
+      <div id = "map"></div>
+   </body>
+   <script type="text/javascript" src="libs/js/api.js"></script>
+   <script type="text/javascript" src="libs/js/jquery-2.1.1.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO-AHqXnLY2LySGh2EbgH80_s4MfUufoc&callback=loadMap"></script>
+</html>

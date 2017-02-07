@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>G-Maps Mixed Grill</title>
+<link rel="stylesheet" href="libs/css/api.css" />
+</head>
+<body>
+	<div id="autocompleteField">
+    <div id="findhotels">
+      Find hotels in:
+    </div>
+
+    <div id="locationField">
+      <input id="autocomplete" placeholder="Enter a city" type="text" />
+    </div>
+
+    <div id="controls">
+      <select id="country">
+        <option value="all">World</option>
+       <option value="ke">Kenya</option>
+	   <option value="tz">Tanzania</option>
+	   <option value="ug">Uganda</option>
+	   <option value="rw">Rwanda</option>
+	   <option value="sa">S. Africa</option>
+	   <option value="br">Burundi</option>
+	   <option value="cg">Congo</option>
+	   <option value="ngr">Nigeria</option>
+	   <option value="eth">Ethiopia</option>
+	   <option value="ssd">S. Sudan</oprion>
+      </select>
+    </div>
+	</div>
+	
+	<div id="map"></div>
+
+	<div id="listing">
+      <table id="resultsTable">
+        <tbody id="results"></tbody>
+      </table>
+    </div>
+
+    <div class='hideDiv'>
+      <div id="info-content">
+        <table>
+          <tr id="iw-url-row" class="iw_table_row">
+            <td id="iw-icon" class="iw_table_icon"></td>
+            <td id="iw-url"></td>
+          </tr>
+          <tr id="iw-address-row" class="iw_table_row">
+            <td class="iw_attribute_name">Address:</td>
+            <td id="iw-address"></td>
+          </tr>
+          <tr id="iw-phone-row" class="iw_table_row">
+            <td class="iw_attribute_name">Telephone:</td>
+            <td id="iw-phone"></td>
+          </tr>
+          <tr id="iw-rating-row" class="iw_table_row">
+            <td class="iw_attribute_name">Rating:</td>
+            <td id="iw-rating"></td>
+          </tr>
+          <tr id="iw-website-row" class="iw_table_row">
+            <td class="iw_attribute_name">Website:</td>
+            <td id="iw-website"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+	<div id="right-panel">
+	  <h2>Results</h2>
+	  <ul id="places"></ul>
+	  <button id="more">More results</button>
+	</div>
+	 <div id="dst-panel">
+      <p>Total Distance: <span id="total"></span></p>
+    </div>
+	
+	 <div id="floating-panel">
+    <b>Start: </b>
+    <input type="text" placeholder="Origin Point" id='start' name='start-point' />
+    <b>End: </b>
+    <input type="text" placeholder="Destination Point" id='end' name='end-point' />
+	<strong>Through: </strong>
+	<input type="text" placeholder="Way Point(s)" id='waypoints' name='waypoints' />
+	<b>Mode: </b>
+    <select id="mode">
+      <option value="DRIVING">Driving</option>
+      <option value="WALKING">Walking</option>
+      <option value="BICYCLING">Bicycling</option>
+      <option value="TRANSIT">Transit</option>
+    </select>
+
+    </div>
+	<div id="includes">
+	<p><a href="service.complex.html" target="blank">Directions Service complex</a>
+	<a href="service.html"  target="blank" >Directions Service</a>
+	<a href="test_1.html"  target="blank" >Directions Test</a></p>
+	</div>
+	<div id="path-panel"></div>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBO-AHqXnLY2LySGh2EbgH80_s4MfUufoc&sensor=true&libraries=visualization,places,geometry,drawing"></script>
+<script type="text/javascript" src="libs/js/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="libs/js/grill.js"></script>
+<script type="text/javascript" src="libs/js/styles.js"></script>
+</body>
+</html>

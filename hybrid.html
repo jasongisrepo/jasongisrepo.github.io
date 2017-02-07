@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Terrain map</title>
+<link rel="stylesheet" href="libs/css/api.css" />
+
+</head>
+<body>
+<div id="mapControls">
+
+<label for="SetOSM">Set OSM</label>
+<input type="checkbox" id="setOSM" />
+<label for="OverlayOSM">Overlay OSM</label>
+<input type="checkbox" id="overlayOSM" />
+<label for="heatmap">Show HeatMap</label>
+<input type="checkbox" id="heatmap" />
+<label>Label Text:</label>
+<input type="text" id="text" value="Jason">
+<button id="change-text">Change label</button>
+<label>Alignment:</label>
+<select id="align">
+<option value="left">Left</option>
+<option value="center">Center</option>
+<option value="right">Right</option>
+</select>
+<button id="change-align">Align Label</button>
+<br /><label for="kml">Add KML Layer</label><input type="checkbox" name="kml" id="kmlLayer" />
+<label for="georss">add GeoRss layer</label><input type="checkbox" id="georssLayer" name="georss" />
+<button id="addGeoJson">Add GeoJson</button>
+</div>
+<div id="map"></div>    
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBO-AHqXnLY2LySGh2EbgH80_s4MfUufoc&libraries=visualization,places,geometry,drawing"></script>
+<script type="text/javascript" src="libs/js/jquery-2.1.1.js"></script>
+ <script src="map.label/maplabel.min.js"></script>
+<script type="text/javascript" src="libs/js/hybrid.js"></script>
+</body>
+</html>

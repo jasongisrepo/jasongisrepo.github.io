@@ -1,7 +1,9 @@
-	Gis based Repository For newbie and Expert Google Maps javascript API Developers.
+#Gis based Repository For newbie and Expert Google Maps javascript API Developers.
 	==================================================================================
-	Code if free source license hence you can Clone, pull Repo, Edit and modify the code to suit your interests, dissemonate and | or sell part | all of code without risking Copyright Obligations.
-	--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	Code if free source license hence you can Clone, pull Repo, Edit and modify the code to suit your interests, 
+	-------------------------------------------------------------------------------------------------------------
+	dissemonate and | or sell part | all of code without risking Copyright Obligations.
+	-------------------------------------------------------------------------------------------
 	
 ## Techniques Covered!
 	1. Grabbing user Location using Client Computer IP address ie Geolocating

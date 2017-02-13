@@ -58,24 +58,6 @@ function initGoogleMaps() {
 	});
 	
 	
-		var blueBaseMap = new google.maps.StyledMapType(blueStyle, {name: "Blue_Style_Map"});
-		map.mapTypes.set('blue_baseMap', blueBaseMap);
-		var night_mode = new google.maps.StyledMapType(nightStyle, {name: "Night_Mode_Style_Map"});
-		map.mapTypes.set('nightMode', night_mode);
-		var osmMap = new google.maps.ImageMapType({
-			getTileUrl: function(coord, zoom) {
-			return "http://tile.openstreetmap.org/" + zoom +
-			"/" + coord.x + "/" + coord.y + ".png";
-			},
-			tileSize: new google.maps.Size(256, 256),
-			name: "Open_Street_Map", 
-			maxZoom: 20,
-			opacity: 0.7
-		});		  
-		map.mapTypes.set('OSM', osmMap);
-		map.setMapTypeId('OSM');
-		
-	
 
 	autocomplete = new google.maps.places.Autocomplete(
 		(

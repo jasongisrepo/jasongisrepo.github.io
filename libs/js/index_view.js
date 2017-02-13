@@ -1,245 +1,97 @@
- var map, places, infoWindow;
-      var markers = [];
-      var autocomplete;
-      var countryRestrict = {'country': 'ke'};
-	  var markerCollection = 'http://kml4earth.appspot.com/icons.html';
-      var numMarkerPath = 'http://maps.google.com/mapfiles/kml/paddle/';
-	  var alphMarkerPath = 'http://maps.google.com/mapfiles/kml/paddle/';
-      var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_green';
-      var hostRegexp = new RegExp('^https?://.+?/');
-
-      var countries = {
-	  
-        'rw' : {
-		center: {lat: -2.3394, lng: 29.8291},
-          zoom: 9
-        },
-         'ke': {
-          center: {lat: -1.3073, lng: 36.8136},
-          zoom: 5
-        },
-       'eth': {
-          center: {lat: 30.4443, lng: 39.6728},
-          zoom: 6
-        },
-		'br': {
-          center: {lat: -3.7437, lng: 29.8291},
-          zoom: 7
-        },
-        'cg': {
-          center: {lat: -3.7437, lng: 22.7099},
-          zoom: 8
-        },
-        'ssd': {
-          center: {lat: 6.6973, lng: 30.4443},
-          zoom: 6
-        },
-        'tz': {
-          center: {lat: -8.2876, lng: 36.2451},
-          zoom: 8
-        },
-        'sa': {
-          center: {lat: -26.0074, lng: 28.2470},
-          zoom: 7
-        },
-        'ngr': {
-          center: {lat: 9.0479, lng: 7.3291},
-          zoom: 9
-        }
+function initGoogleMaps() {
+  map = new google.maps.Map(document.getElementById('map'), {
+  zoom: countries['ke'].zoom,
+  center: countries['ke'].center,
+  mapTypeId: google.maps.MapTypeId.TERRAIN,
+  disableDefaultUI: true,
+  mapTypeControl: false,
+  zoomControl: true,
+  zoomControlOptions: {
+	style: google.maps.ZoomControlStyle.LARGE
+  },
+  streetViewControl: true,
+  streetViewControlOptions: {
+	position: google.maps.ControlPosition.RIGHT_BOTTOM
+  }
+});
+	var mapCenter = map.getCenter();
+	var marker = new google.maps.Marker({
+	position: new google.maps.LatLng(mapCenter.lat(), mapCenter.lng()),
+	animation: google.maps.Animation.BOUNCE,
+	map: map,
+	draggable: true,
+	crossOnDrag: false
+	});
+	var markerInfo = new google.maps.InfoWindow({
+		content: "Map Center <br />\("+mapCenter.lat()+", "+ mapCenter.lng()+"\)"
+	});
+	
+	google.maps.event.addListener(marker, 'click', function(){
+		markerInfo.open(map, marker);
+	});
+	
+	var iconicMarker = new google.maps.Marker({
+			position: new google.maps.LatLng(-1.5434, 36.6214),
+			map: map,
+			draggable:true,
+			icon:'libs/img/marker-icon.png',
+			label: {
+				fontFamily: 'lucida console',
+				fontStyle: 'italic',
+				fontWeight: '2px',
+				text: 'Marker',
+				color: 'red'
+			},
+			crossOnDrag: false,
+			cursor: 'pointer',
+			opacity: 0.6,
+			map: map
+			});
+		  google.maps.event.addListener(iconicMarker, 'dragend', function(evt){
+		    var lat = evt.latLng.lat().toFixed(4);
+		    var lng = evt.latLng.lng().toFixed(4);
+			openInfoWin(lat, lng, map, iconicMarker);
+		});
+	
+	infoWindow = new google.maps.InfoWindow({
+	  content: document.getElementById('info-content')
+	});
+	
+	
+		var blueBaseMap = new google.maps.StyledMapType(blueStyle, {name: "Blue_Style_Map"});
+		map.mapTypes.set('blue_baseMap', blueBaseMap);
+		var night_mode = new google.maps.StyledMapType(nightStyle, {name: "Night_Mode_Style_Map"});
+		map.mapTypes.set('nightMode', night_mode);
+		var osmMap = new google.maps.ImageMapType({
+			getTileUrl: function(coord, zoom) {
+			return "http://tile.openstreetmap.org/" + zoom +
+			"/" + coord.x + "/" + coord.y + ".png";
+			},
+			tileSize: new google.maps.Size(256, 256),
+			name: "Open_Street_Map", 
+			maxZoom: 20,
+			opacity: 0.7
+		});		  
+		map.mapTypes.set('OSM', osmMap);
+		map.setMapTypeId('OSM');
 		
-      };
+	
 
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          zoom: countries['ke'].zoom,
-          center: countries['ke'].center,
-          mapTypeControl: false,
-          panControl: false,
-          zoomControl: false,
-          streetViewControl: false
-        });
+	autocomplete = new google.maps.places.Autocomplete(
+		(
+			document.getElementById('autocomplete')), {
+		  types: ['(cities)'],
+		  componentRestrictions: countryRestrict
+		});
+	places = new google.maps.places.PlacesService(map);
 
-        infoWindow = new google.maps.InfoWindow({
-          content: document.getElementById('info-content')
-        });
-
-        autocomplete = new google.maps.places.Autocomplete(
-            (
-                document.getElementById('autocomplete')), {
-              types: ['(cities)'],
-              componentRestrictions: countryRestrict
-            });
-        places = new google.maps.places.PlacesService(map);
-
-        autocomplete.addListener('place_changed', onPlaceChanged);
+	autocomplete.addListener('place_changed', onPlaceChanged);
+	
+	document.getElementById('country').addEventListener(
+		'change', setAutocompleteCountry);
 		
-        document.getElementById('country').addEventListener(
-            'change', setAutocompleteCountry);
-			
-			
-			
-			
-      }
 
-      function onPlaceChanged() {
-        var place = autocomplete.getPlace();
-        if (place.geometry) {
-          map.panTo(place.geometry.location);
-          map.setZoom(15);
-          search();
-        } else {
-          document.getElementById('autocomplete').placeholder = 'Enter a city';
-        }
-      }
+  }
+
 	  
-      function search() {
-        var search = {
-          bounds: map.getBounds(),
-          types: ['lodging']
-        };
-
-        places.nearbySearch(search, function(results, status) {
-          if (status === google.maps.places.PlacesServiceStatus.OK) {
-            clearResults();
-            clearMarkers();
-			
-            for (var i = 0; i < results.length; i++) {
-              var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
-              var markerIcon = MARKER_PATH + markerLetter + '.png';
-              markers[i] = new google.maps.Marker({
-                position: results[i].geometry.location,
-                animation: google.maps.Animation.DROP,
-                icon: markerIcon
-              });
-            
-              markers[i].placeResult = results[i];
-              google.maps.event.addListener(markers[i], 'click', showInfoWindow);
-              setTimeout(dropMarker(i), i * 100);
-              addResult(results[i], i);
-            }
-          }
-        });
-      }
-
-      function clearMarkers() {
-        for (var i = 0; i < markers.length; i++) {
-          if (markers[i]) {
-            markers[i].setMap(null);
-          }
-        }
-        markers = [];
-      }
-	  
-      function setAutocompleteCountry() {
-        var country = document.getElementById('country').value;
-        if (country == 'all') {
-          autocomplete.setComponentRestrictions([]);
-          map.setCenter({lat: 15, lng: 0});
-          map.setZoom(2);
-        } else {
-          autocomplete.setComponentRestrictions({'country': country});
-          map.setCenter(countries[country].center);
-          map.setZoom(countries[country].zoom);
-        }
-        clearResults();
-        clearMarkers();
-      }
-
-      function dropMarker(i) {
-        return function() {
-          markers[i].setMap(map);
-        };
-      }
-
-      function addResult(result, i) {
-        var results = document.getElementById('results');
-        var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
-        var markerIcon = alphMarkerPath + markerLetter + '.png';
-
-        var tr = document.createElement('tr');
-        tr.style.backgroundColor = (i % 2 === 0 ? '#F0F0F0' : '#FFFFFF');
-        tr.onclick = function() {
-          google.maps.event.trigger(markers[i], 'click');
-        };
-
-        var iconTd = document.createElement('td');
-        var nameTd = document.createElement('td');
-        var icon = document.createElement('img');
-        icon.src = markerIcon;
-        icon.setAttribute('class', 'placeIcon');
-        icon.setAttribute('className', 'placeIcon');
-        var name = document.createTextNode(result.name);
-        iconTd.appendChild(icon);
-        nameTd.appendChild(name);
-        tr.appendChild(iconTd);
-        tr.appendChild(nameTd);
-        results.appendChild(tr);
-      }
-
-      function clearResults() {
-        var results = document.getElementById('results');
-        while (results.childNodes[0]) {
-          results.removeChild(results.childNodes[0]);
-        }
-      }
-
-      function showInfoWindow() {
-        var marker = this;
-        places.getDetails({placeId: marker.placeResult.place_id},
-            function(place, status) {
-              if (status !== google.maps.places.PlacesServiceStatus.OK) {
-                return;
-              }
-              infoWindow.open(map, marker);
-              buildIWContent(place);
-            });
-      }
-	  
-      function buildIWContent(place) {
-        document.getElementById('iw-icon').innerHTML = '<img class="hotelIcon" ' +
-            'src="' + place.icon + '"/>';
-        document.getElementById('iw-url').innerHTML = '<b><a href="' + place.url +
-            '">' + place.name + '</a></b>';
-        document.getElementById('iw-address').textContent = place.vicinity;
-
-        if (place.formatted_phone_number) {
-          document.getElementById('iw-phone-row').style.display = '';
-          document.getElementById('iw-phone').textContent =
-              place.formatted_phone_number;
-        } else {
-          document.getElementById('iw-phone-row').style.display = 'none';
-        }
-
-        if (place.rating) {
-          var ratingHtml = '';
-          for (var i = 0; i < 5; i++) {
-            if (place.rating < (i + 0.5)) {
-              ratingHtml += '&#10025;';
-            } else {
-              ratingHtml += '&#10029;';
-            }
-          document.getElementById('iw-rating-row').style.display = '';
-          document.getElementById('iw-rating').innerHTML = ratingHtml;
-          }
-        } else {
-          document.getElementById('iw-rating-row').style.display = 'none';
-        }
-
-        if (place.website) {
-          var fullUrl = place.website;
-          var website = hostRegexp.exec(place.website);
-          if (website === null) {
-            website = 'http://' + place.website + '/';
-            fullUrl = website;
-          }
-          document.getElementById('iw-website-row').style.display = '';
-          document.getElementById('iw-website').textContent = website;
-        } else {
-          document.getElementById('iw-website-row').style.display = 'none';
-        }
-		
-		
-      }
-	  
-	  
-	  google.maps.event.addDomListener(window, 'load', initMap);
+			google.maps.event.addDomListener(window, 'load', initGoogleMaps);

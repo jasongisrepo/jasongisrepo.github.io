@@ -1,4 +1,11 @@
-
+	function openInfoWin(lat, lng, map, marker){
+	var infoWin = new google.maps.InfoWindow({
+		content: '\('+lat+', '+lng+'\)'
+	});
+	google.maps.event.addListener(marker, 'click', function(){
+		infoWin.open(map, marker);
+	});
+	}
 	  function customizePolyline(){
 			google.maps.event.addListener(drawingManager, 'polylinecomplete', function(polyline){
 			var latlng = polyline.getPath().getArray().toString();

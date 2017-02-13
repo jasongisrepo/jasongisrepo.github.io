@@ -92,6 +92,3 @@ function initGoogleMaps() {
 		
 
   }
-
-	  
-			google.maps.event.addDomListener(window, 'load', initGoogleMaps);
